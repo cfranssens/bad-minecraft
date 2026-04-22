@@ -1,14 +1,12 @@
 # Bad Minecraft
-A badly made clone of the popular sandbox game Minecraft.
 
 ### Introduction
-This is an attempt to recreate Minecraft in a way that is optimised. I made this project with the goal to learn more about optimisation techniques, and game development in general.
+This is an implementation of Greedy Meshing in a voxel-based chunked structure. 
 
 ### Greedy meshing
 ![image](https://github.com/cfranssens/bad-minecraft/assets/101316630/66b32b70-27b5-41ba-905e-1568ad36362b)
 
-
-One of the first things implemented, was greedy meshing in a compute shader to be run in parallel.
+The meshing algorthm is implemented in a compute shader to be ran in parallel.
 A workgroup is optimised to handle the meshing of a single 32x32x32 chunk. 
 
 https://github.com/cfranssens/bad-minecraft/blob/master/src/shaders/generate_chunk.glsl
